@@ -33,7 +33,6 @@ for i in range(1400):
     rand_index = np.random.choice(100)
     rand_x = [x_vals[rand_index]]
     rand_y = [y_vals[rand_index]]
-
     sess.run(train_step, feed_dict={x_data: rand_x, y_target: rand_y})
 
     # Print the current value of the parameter `A` as well as the current loss
